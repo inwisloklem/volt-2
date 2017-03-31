@@ -1,0 +1,65 @@
+.form
+  box-sizing border-box
+  margin auto
+  padding 0 20px
+  max-width 500px
+
+  @media $desktop
+    padding 30px 200px
+    max-width 920px
+    background transparent url("../img/bg-form.svg") 50% 50% no-repeat
+    background-size contain
+
+  &--flat
+    padding 30px 10px
+    max-width 100%
+    background-image none
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+
+    @media $tablet-desktop
+      padding 30px 0
+
+    .form
+      &__input
+      &__btn
+        flex-basis 100%
+
+        @media $tablet-desktop
+          flex-basis 32%
+
+  &__title
+    margin-bottom 30px
+    font(1.625em, 1.2, 400, uppercase)
+
+    @media $desktop
+      margin-bottom 0
+      position relative
+      top -40px
+
+  &__input
+    box-sizing border-box
+    margin-bottom 20px
+    padding 0 25px
+    height 60px
+    width 100%
+    outline none
+    border none
+    border-radius 30px
+    background-color $mercury
+    font(1.125em, 1, 400, uppercase)
+    transition all 0.4s ease-in
+
+    &::-webkit-input-placeholder
+      color $white
+      font-weight 300
+
+    &:focus
+      color $tundora
+      box-shadow 0 0 25px 0 $bright-sun
+      font-weight 700
+    
+  &__btn
+    margin-bottom 10px

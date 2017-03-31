@@ -1,0 +1,63 @@
+.intro
+  padding 60px 0
+  padding-top 30px
+  text-align center
+  color $white
+  background-color $silver
+  background-image linear-gradient(to bottom, $full-yellow, $tundora)
+
+  @media $tablet-desktop
+    color $tundora
+    background $silver url("../img/bg-intro.jpg") 50% 0 no-repeat
+    background-size cover
+
+  &__hero
+    margin-bottom 40px
+    font(2.25em, 1.2, 900, uppercase)
+
+    @media $tablet
+      font(3.5em, 1.2, 900)
+
+    @media $desktop
+      font(4.5em, 1.2, 900)
+
+  &__menu
+    margin-bottom 20px
+
+  &__block
+    margin-bottom 30px
+    display inline-block
+    padding 15px 25px
+    padding-bottom 12px
+    color $white
+    background-color $bright-sun
+    font(2.25em, 1.4, 900, uppercase)
+
+  &__wrapper
+    display flex
+    flex-direction row
+    justify-content center
+
+    @media $desktop
+      justify-content space-between
+
+  &__inner
+    display none
+
+    @media $desktop
+      display flex
+      flex-direction row
+      align-items center
+
+  &__image
+    margin-bottom 30px
+    
+    @media $tablet
+      padding-bottom 15px
+
+    @media $tablet-desktop
+      margin-bottom 0
+
+  &__num
+    margin-right 15px
+    font(2.25em, 1, 300)

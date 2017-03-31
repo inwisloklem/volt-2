@@ -1,0 +1,40 @@
+.works
+  padding 50px
+  padding-bottom 30px
+  text-align center
+  background-color $tundora
+  background-image linear-gradient(to bottom, $tundora, $full-yellow)
+  
+  @media $tablet-desktop
+    background $alto url("../img/bg-works.jpg") 50% 0 no-repeat
+    background-size cover
+
+  &__list
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content center
+    list-style none
+
+    @media $tablet-desktop
+      margin-right -30px
+
+  &__item
+    overflow hidden
+    margin-bottom 30px
+    max-width 350px
+    max-height 300px
+    border-radius 5px
+
+    @media $tablet-desktop
+      margin-right 30px
+
+    img
+      max-width 100%
+
+  &__title
+    color $white
+    margin-bottom 30px
+
+    @media $tablet-desktop
+      color $tundora

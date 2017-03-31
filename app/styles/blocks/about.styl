@@ -1,0 +1,40 @@
+.about
+  padding 50px
+  text-align center
+  
+  &__title
+    margin-bottom 50px
+
+  &__list
+    margin-bottom 30px
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    list-style none
+
+  &__image
+    margin-bottom 15px
+
+  &__item
+    position relative
+    margin-bottom 30px
+    flex-basis 100%
+
+    @media $tablet
+      flex-basis 50%
+
+    @media $desktop
+      flex-basis 25%
+
+  &__num
+    position absolute
+    left calc(50% - 120px)
+    font(1.5em, 1.2, 900)
+
+  &__text
+    margin auto
+    max-width 240px
+    font(1.5, 1.2, 400, uppercase)
+
+  &__fn
+    font(1.5em, 1.2, 900, uppercase)

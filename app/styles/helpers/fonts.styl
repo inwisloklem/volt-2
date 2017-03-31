@@ -1,0 +1,35 @@
+@font-face
+  font-weight 300
+  font-style normal
+  font-family "Roboto"
+  src local("Roboto Light"), local("Roboto-Light"), url("../fonts/robotolight.woff2") format("woff2"), url("../fonts/robotolight.woff") format("woff")
+
+@font-face
+  font-weight 400
+  font-style normal
+  font-family "Roboto"
+  src local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff")
+
+@font-face
+  font-weight 700
+  font-style normal
+  font-family "Roboto"
+  src local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff")
+
+@font-face
+  font-weight 900
+  font-style normal
+  font-family "Roboto"
+  src local("Roboto Black"), local("Roboto-Black"), url("../fonts/robotoblack.woff2") format("woff2"), url("../fonts/robotoblack.woff") format("woff")
+
+$font = "Roboto", sans-serif
+
+font($size, $height = normal, $weight = 400, $transform = none)
+  font-size $size
+  font-weight $weight
+
+  if $height != "normal"
+    line-height $height
+
+  if $transform != "none"
+    text-transform $transform

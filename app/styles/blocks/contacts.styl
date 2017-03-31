@@ -1,0 +1,88 @@
+.contacts
+  padding 15px 0
+  color $white
+  background-color $dove-gray
+  text-align center
+  
+  &__wrapper
+    display flex
+    flex-direction column-reverse
+    flex-wrap wrap
+    justify-content space-between
+    align-items center
+
+    @media $tablet-desktop
+      flex-direction row
+      flex-wrap nowrap
+
+  &__image
+  &__block
+    display flex
+    flex-direction column
+    width 100%
+
+    @media $tablet
+      max-width 300px
+
+    @media $desktop
+      max-width 300px
+
+  &__block
+    margin-bottom 10px
+    display flex
+    flex-direction row-reverse
+    justify-content center
+    font(1.125em, 1.4, 300)
+    
+    @media $tablet-desktop
+      margin-bottom 0
+      display block
+      text-align left
+      
+  &__phone
+    margin-right 10px
+    
+    @media $tablet-desktop
+      margin-right 0
+
+  &__image
+    display none
+    
+    @media $tablet-desktop
+      display flex
+
+  &__text
+    padding-top 10px
+    text-align center
+    color $silver
+    font(1em, 1.2, 300)
+  
+  &__phone
+  &__address
+    position relative
+    padding-left 25px
+    
+  &__address
+    text-align left
+    max-width 320px
+    margin auto
+
+  &__icon
+    position absolute
+    top 0
+    left 0
+
+    @media $desktop
+      top 2px
+
+  &__link
+    font-weight 700
+    color $white
+    text-decoration none
+    transition all 0.4s ease-in
+
+    @media $tablet-desktop
+      font-weight 300
+
+    &:hover
+      color $bright-sun

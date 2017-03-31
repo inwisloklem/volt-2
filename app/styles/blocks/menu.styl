@@ -1,0 +1,49 @@
+.menu
+  display none
+  padding 20px 0
+
+  @media $tablet-desktop
+    display block
+
+  &__list
+    display flex
+    flex-direction row
+    justify-content space-around
+    list-style none
+
+    @media $tablet
+      flex-wrap wrap
+      background-color $tundora
+
+    @media $desktop
+      border-bottom 2px solid $mercury
+
+  &__item
+    @media $tablet
+      flex-basis 30%
+
+  &__link
+    position relative
+    display block
+    padding-bottom 10px
+    text-decoration none
+    color $tundora
+    font(1.125em, 1, 700, uppercase)
+    transition all 0.4s ease-in
+
+    @media $tablet
+      padding 10px
+      color $alto
+
+    &:hover
+      color $bright-sun
+
+      @media $desktop
+        &::after
+          position absolute
+          bottom -2px
+          display block
+          width 100%
+          height 4px
+          background-color $bright-sun
+          content ""

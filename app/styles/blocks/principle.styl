@@ -1,0 +1,82 @@
+.principle
+  padding 50px
+  text-align center
+  
+  @media $desktop
+    padding-bottom 0
+    background $white url("../img/bg-principle.png") 50% 52.5% no-repeat
+
+  &__title
+    margin-bottom 80px
+    
+  &__list
+    display flex
+    flex-wrap wrap
+    justify-content center
+    list-style none
+    
+    @media $tablet-desktop
+      justify-content space-around
+    
+  &__item
+    margin-bottom 50px
+    position relative
+    padding-top 100px
+    min-width 200px
+    flex-basis 26%
+    position relative
+
+    @media $desktop
+      &:nth-of-type(1)
+        order -7
+
+      &:nth-of-type(2)
+        order -6
+
+      &:nth-of-type(3)
+        order -5
+
+      &:nth-of-type(4)
+        order -2
+
+      &:nth-of-type(5)
+        order -3
+
+      &:nth-of-type(6)
+        order -4
+
+      &:nth-of-type(7)
+        order -1
+        margin-right auto
+        margin-left 50px
+
+  &__icon
+    position absolute
+    top 0
+    left 50%
+    transform translateX(-50%)
+
+    &--special
+      @media $tablet-desktop
+        padding-right 18px
+
+  &__num
+    position absolute
+    top -25px
+    left calc(50% - 80px)
+    width 50px
+    height 50px
+    border-radius 50%
+    text-align center
+    background-color $silver
+    font(1.75em, 50px, 400)
+    transform translateX(-50%)
+    
+  &__text
+    text-align center
+    font(1.375em, 1.2, 700, uppercase)
+
+  &__btn
+    @media $desktop
+      position relative
+      top -150px

@@ -1,0 +1,69 @@
+.reviews
+  padding-top 50px
+  text-align left
+  
+  @media $tablet
+    padding 50px
+
+  @media $desktop
+    padding 50px 0
+
+  &__list
+    list-style none
+
+  &__title
+    text-align center
+    margin-bottom 30px
+
+  &__wrapper
+    display flex
+    flex-direction column
+    
+    @media $desktop
+      flex-direction row
+      flex-wrap wrap
+
+  &__block
+    margin-bottom 40px
+    display flex
+    flex-direction column
+    align-items center
+    width 100%
+
+    @media $tablet-desktop
+      flex-direction row
+      flex-basis 50%
+
+    @media $desktop
+      align-items flex-start
+
+  &__inner
+    padding 0 20px
+
+  &__name
+    font(1.5em, 1.2, 700)
+    
+  &__desc
+    margin-bottom 10px
+    font(1em, 1.2, 700, uppercase)
+
+  &__text
+    margin-bottom 10px
+    font(1em, 1.2, 300)
+
+  &__brands
+    display none
+    text-align center
+    
+    @media $desktop
+      display block
+
+    img
+      display inline-block
+      max-width 100%
+  
+  &__image
+    margin-bottom 20px
+
+    @media $tablet-desktop
+      margin-bottom 0

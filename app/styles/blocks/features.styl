@@ -1,0 +1,48 @@
+.features
+  padding 50px
+  text-align center
+  color $white
+  background-color $tundora
+  background-image linear-gradient(to bottom, $tundora, $full-yellow)
+
+  @media $desktop
+    color $tundora
+    background $tundora url("../img/bg-features.jpg") 50% 0 no-repeat
+    background-size cover
+
+  &__title
+    margin-bottom 30px
+
+    @media $desktop
+      width 45%
+
+  &__list
+    display flex
+    flex-wrap wrap
+    list-style none
+
+    @media $desktop
+      width 45%
+
+  &__item
+    position relative
+    padding-top 140px
+    
+    flex-basis 100%
+    
+    @media $tablet-desktop
+      flex-basis 50%
+
+  &__icon
+    position absolute
+    top 40px
+    left 50%
+    
+    transform translateX(-50%)
+
+  &__name
+    margin-bottom 20px
+    font(1.125em, 1.2, 700, uppercase)
+    
+  &__text
+    font(1em, 1.2, 300)
